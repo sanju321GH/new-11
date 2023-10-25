@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Montserrat:wght@500;700&family=Outfit:wght@100;300;400;600&display=swap');
+
+*{
+    font-family: Outfit, sans-serif;
+}
+
+body{
+    background-color: hsl(240, 78%, 98%);
+}
+
+#Basic{
+   text-align: center;
+   height: 380px;
+   width: 290px;
+   display: inline-block;
+   margin: 0%;
+   padding: 40px;
+   padding-top: 10px;
+   background-color: white;
+   border-radius: 10px;
+   position: relative;
+    left: 4px;
+}
+
+#Professional{
+   text-align: center;
+   height: 400px;
+   width: 260px;
+   display: inline-block;
+   margin: 0%;
+   padding: 40px;
+   padding-right: 60px;
+   border-radius: 10px;
+   background: linear-gradient(75deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+#professional, p{
+   color: white;
+}
+
+#Master{
+   text-align: center;
+   height: 380px;
+   width: 280px;
+   display: inline-block;
+   margin: 0%;
+   padding: 40px;
+   padding-top: 10px;
+   background-color: white;
+   border-radius: 10px;
+   position: relative;
+    right: 4px;
+}
+
+#container{
+    position: absolute;
+     top: 25%;
+     left: 14%;
+}
+#num1{
+  font-size: 60px;
+  font-weight: 700;
+  margin: 30px;
+}
+#num2{
+   font-size: 60px;
+   font-weight: 700;
+   margin: 30px;
+}
+#num3{
+    font-size: 60px;
+    font-weight: 700;
+    margin: 30px;
+}
+hr{
+    margin-bottom: 15px;
+    margin-top: 15px;
+    width: 300px;
+     position: relative;
+     right: 10px; 
+}
+#bu{
+   position: relative;
+    top: 11px;
+    right: 10px;
+   width: 300px;
+   height: 40px;
+   border: none;
+   border-radius: 5px;
+   color: hsl(237, 63%, 64%);
+   background-color: hsl(240, 78%, 98%);
+   font-weight: 700;
+   letter-spacing: 1px;
+   transition: 0.3s;
+   border: 1px solid transparent;
+}
+#bu:hover{
+    cursor: pointer;
+    background: transparent;
+    color: hsl(240, 78%, 98%);
+    border: 1px solid hsl(240, 78%, 98%);
+}
+#button{
+    position: relative;
+     top: 11px;
+     right: 10px;
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    color: hsl(240, 78%, 98%);
+    background: hsl(237, 54%, 64%);
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    border: 1px solid transparent;
+ }
+ #button:hover{
+     cursor: pointer;
+     background: transparent;
+     color: hsl(237, 63%, 64%);
+     border: 1px solid hsl(237, 63%, 64%);
+ }
+.white, p{
+    font-weight: 700;
+    color: hsl(232, 13%, 33%);
+} 
+h1{
+     color: hsl(232, 13%, 33%);
+}
+#toggle{
+    position: relative;
+     top: 3px;
+     right: 22px;
+    width: 50px;
+    height: 25px;
+    background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    transition: 0.3s;
+    border-radius: 20px
+}
+#toggle::before{
+   display: flex;
+   content: "";
+   width: 20px;
+   height: 20px;
+   background-color: hsl(240, 78%, 98%);
+   border-radius: 50%;
+   margin: 2.5px;
+   transition: 0.3s;
+}
+#checkbox:checked + #toggle::before{
+    transform: translateX(24px);
+}
+#checkbox{
+    opacity: none;
+}
+
+#bgtop{
+    position: absolute;
+     right: 0%;
+     top: 0%;
+}
+
+#bgbot{
+    position: absolute;
+     bottom: -5%;
+     left: 0%;
+    z-index: -4;
+}
+
+#t{
+    position: absolute;
+     left: 44%;
+     top: 15%;
+}
